@@ -7,10 +7,10 @@ import {
 import { THEME } from '../../theme/colors';
 
 interface GhostModeBannerProps {
-  visible: boolean;
+  visible?: boolean;
 }
 
-export const GhostModeBanner: React.FC<GhostModeBannerProps> = ({ visible }) => {
+export const GhostModeBanner: React.FC<GhostModeBannerProps> = ({ visible = true }) => {
   if (!visible) return null;
 
   return (
