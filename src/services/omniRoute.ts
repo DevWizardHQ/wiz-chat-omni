@@ -148,8 +148,8 @@ export async function streamChatCompletion({
             const data = JSON.parse(trimmed.slice(6));
             const deltaContent = data.choices?.[0]?.delta?.content || '';
             if (deltaContent) {
+              tokenBuffer += deltaContent;
               accumulatedText += deltaContent;
-              onToken(deltaContent);
             }
           } catch {
             // Ignore parse errors
