@@ -23,6 +23,12 @@
     },
     "plugins": [
       "expo-secure-store"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c55a91f5-403e-46ab-a19a-28fa6e40b919"
+      }
+    },
+    "owner": "dev-wizard"
   }
 }
